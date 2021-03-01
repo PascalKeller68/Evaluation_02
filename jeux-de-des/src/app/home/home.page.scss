@@ -1,7 +1,13 @@
-#container {
-  
-  text-align: center;
+@import url(https://fonts.google.com/specimen/Lato?preview.text_type=custom);
+$font-family-base: "custom", sans-serif !default;
 
+body {
+  padding: 5%;
+  background-color: brown;
+}
+
+#container {
+  text-align: center;
   position: absolute;
   left: 0;
   right: 0;
@@ -17,9 +23,7 @@
 #container p {
   font-size: 16px;
   line-height: 22px;
-
   color: #8c8c8c;
-
   margin: 0;
 }
 
@@ -28,14 +32,77 @@
 }
 
 ion-content {
-  --background: #ad4040;
-  --color: #3880ff;
+  --background: #ffffff;
+  --color: #000000;
   --keyboard-offset: 0px;
   --offset-bottom: 0px;
   --offset-top: 0px;
-  --padding-bottom: 50px;
-  --padding-end: 50px;
-  --padding-start: 50px;
-  --padding-top: 50px;
-
+  --padding-bottom: 0px;
+  --padding-end: 0px;
+  --padding-start: 0px;
+  --padding-top: 0px;
+  font-family: "Lato", sans-serif;
 }
+
+ion-button {
+  --background: white;
+  --background-activated: #3880ff;
+  --background-activated-opacity: 1;
+  --background-focused: #3880ff;
+  --background-focused-opacity: 1;
+  --background-hover: #3880ff;
+  --background-hover-opacity: 1;
+  --border-color: #ffffff;
+  --border-radius: 8px;
+  --border-style: solid;
+
+  --box-shadow: 0px 0px;
+  --color: #000000;
+  --color-activated: #3880ff;
+  --color-focused: #ffffff;
+  --color-hover: #ffffff;
+  --opacity: 1;
+  --padding-bottom: 0px;
+  --padding-end: 0px;
+  --padding-start: 0px;
+  --padding-top: 0px;
+  --ripple-color: #1e1e1e;
+  --transition: background-color 15ms linear;
+}
+
+ion-icon {
+  color: red;
+  font-size: 35px;
+  transform: rotate(deg);
+}
+
+.current {
+  background-color: red;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.currentResult {
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 10%;
+}
+
+.score {
+  font-size: 3rem;
+  color: red;
+}
+.dé {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto }
