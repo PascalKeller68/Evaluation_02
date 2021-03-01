@@ -1,10 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles.css">
+  <title>Jeux de dé</title>
+</head>
+
 <body>
 
   <ion-content [fullscreen]="true">
 
     <ion-row class="ion-justify-content-center">
-      <ion-button expand="block" fill="clear" shape="round">
-        <ion-icon id="btnNewGame" name="add-circle-outline">NEW GAME</ion-icon>
+      <ion-button id="btnNewGame"expand="block" fill="clear" shape="round">
+        <ion-icon name="add-circle-outline">NEW GAME</ion-icon>
         NEW GAME
       </ion-button>
     </ion-row>
@@ -21,7 +38,7 @@
       </ion-col>
 
       <ion-col class="dé " size=12 size-md=4>
-        <img class="displayed" src="../assets/images/face-1.png" alt="Face de dé 1">
+        <img id="imageDe" class="displayed" src="/images/face-1.png" alt="Face de dé 1">
       </ion-col>
 
       <ion-col size=12 size-md=4>
@@ -45,14 +62,14 @@
 
       <ion-col size=4>
         <ion-row class="ion-justify-content-center">
-          <ion-button expand="block" fill="clear" shape="round">
+          <ion-button id="btnRollDice" expand="block" fill="clear" shape="round">
             <ion-icon name="sync-outline">ROLL DICE</ion-icon>
             ROLL DICE
           </ion-button>
         </ion-row>
 
         <ion-row class="ion-justify-content-center">
-          <ion-button expand="block" fill="clear" shape="round">
+          <ion-button id="btnHold" expand="block" fill="clear" shape="round">
             <ion-icon name="download-outline">HOLD</ion-icon>
             HOLD
           </ion-button>
@@ -68,10 +85,19 @@
 
   </ion-content>
 
-  <!-- intégration du script JS-->
- 
-  <script src="../../jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
-  <script src="../home/homepage.js"></script>
+
+  <script src="script.js"></script>
 
 </body>
+
+</html>
