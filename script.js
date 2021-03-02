@@ -32,22 +32,22 @@ $(document).ready(() => {
     /** Fonction pour animer le dé **/
     function AnimationDe(face) {
         if (face == 0) {
-            $("#imageDe").attr('src', '/images/face-1.png').delay(1000);
+            $("#imageDe").attr('src', './images/face-1.png').delay(1000);
         }
         else if (face == 1) {
-            $("#imageDe").attr('src', '/images/face-2.png').delay(1000);
+            $("#imageDe").attr('src', './images/face-2.png').delay(1000);
         }
         else if (face == 2) {
-            $("#imageDe").attr('src', '/images/face-3.png').delay(1000);
+            $("#imageDe").attr('src', './images/face-3.png').delay(1000);
         }
         else if (face == 3) {
-            $("#imageDe").attr('src', '/images/face-4.png').delay(1000);
+            $("#imageDe").attr('src', './images/face-4.png').delay(1000);
         }
         else if (face == 4) {
-            $("#imageDe").attr('src', '/images/face-5.png').delay(1000);
+            $("#imageDe").attr('src', './images/face-5.png').delay(1000);
         }
         else if (face == 5) {
-            $("#imageDe").attr('src', '/images/face-6.png').delay(1000);
+            $("#imageDe").attr('src', './images/face-6.png').delay(1000);
         }
     }
 
@@ -126,12 +126,12 @@ $(document).ready(() => {
         let score1 = scoreTotalPlayer1 + scoreCurrentPlayer1;
         let score2 = scoreTotalPlayer2 + scoreCurrentPlayer2;
 
-        if (score1 >= 20) {
+        if (score1 >= 100) {
             console.log('Score joueur 1 :' + scoreTotalPlayer1);
             alert('Le joueur 1 à gagné !');
             NewGame();
         }
-        if (score2 >= 20) {
+        if (score2 >= 100) {
             console.log('Score joueur 1 :' + scoreTotalPlayer2);
             alert('Le joueur 2 à gagné !');
             NewGame();
