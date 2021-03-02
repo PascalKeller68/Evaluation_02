@@ -31,13 +31,6 @@ body {
   ion-content {
     --background: #ffffff;
     --color: #000000;
-    --keyboard-offset: 0px;
-    --offset-bottom: 0px;
-    --offset-top: 0px;
-    --padding-bottom: 0px;
-    --padding-end: 0px;
-    --padding-start: 0px;
-    --padding-top: 0px;
     font-family: "Lato", sans-serif;
   }
   
@@ -59,11 +52,7 @@ body {
     --color-focused: #ffffff;
     --color-hover: #ffffff;
     --opacity: 1;
-    --padding-bottom: 0px;
-    --padding-end: 0px;
-    --padding-start: 0px;
-    --padding-top: 0px;
-    --ripple-color: #1e1e1e;
+     --ripple-color: #1e1e1e;
     --transition: background-color 15ms linear;
   }
   
@@ -74,11 +63,11 @@ body {
   }
   
   .current {
+    font-size: 0.8rem;
     background-color: red;
     margin-left: 20%;
     margin-right: 20%;
     padding-top: 5%;
-    padding-bottom: 10%;
   }
   
   .currentResult {
@@ -87,16 +76,16 @@ body {
     font-size: 1.5rem;
     margin-left: 20%;
     margin-right: 20%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
   }
   
   .score {
-    font-size: 3rem;
+    font-size: 2rem;
     color: red;
   }
   .dé {
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   
   .displayed {
@@ -104,5 +93,7 @@ body {
     margin-left: auto;
     margin-right: auto }
     
-    
+    h2{
+      padding: 2%;
+    }
    

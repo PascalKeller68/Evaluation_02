@@ -20,20 +20,20 @@
   <ion-content [fullscreen]="true">
 
     <ion-row class="ion-justify-content-center">
-      <ion-button id="btnNewGame"expand="block" fill="clear" shape="round">
+      <ion-button id="btnNewGame" expand="block" fill="clear" shape="round">
         <ion-icon name="add-circle-outline">NEW GAME</ion-icon>
         NEW GAME
-      </ion-button>
+      </ion-button>      
     </ion-row>
 
     <ion-row class="ion-margin">
 
       <ion-col size=12 size-md=4>
         <ion-row class="ion-justify-content-center">
-          <h2>JOUEUR 1</h2>
+          <h2 id="player1">JOUEUR 1</h2>
         </ion-row>
-        <ion-row class="score ion-justify-content-center" id="scorePlayer1">
-          SCORE
+        <ion-row class="ion-justify-content-center">
+          <h3 class="score " id="scorePlayer1">0</h3>
         </ion-row>
       </ion-col>
 
@@ -43,10 +43,10 @@
 
       <ion-col size=12 size-md=4>
         <ion-row class="ion-justify-content-center">
-          <h2>JOUEUR 2</h2>
+          <h2 id="player2">JOUEUR 2</h2>
         </ion-row>
-        <ion-row class="score ion-justify-content-center" id="scorePlayer2">
-          SCORE
+        <ion-row class="score ion-justify-content-center">
+          <h3 class="score " id="scorePlayer2">0</h3>
         </ion-row>
       </ion-col>
 
@@ -57,7 +57,9 @@
 
       <ion-col size=4>
         <ion-row class="current ion-text-center ion-justify-content-center">CURRENT</ion-row>
-        <ion-row class="currentResult ion-text-center ion-justify-content-center">NOMBRE</ion-row>
+        <ion-row class="currentResult ion-text-center ion-justify-content-center">
+          <h3 id="currentScore1">0</h3>
+        </ion-row>
       </ion-col>
 
       <ion-col size=4>
@@ -78,7 +80,9 @@
 
       <ion-col size=4>
         <ion-row class="current ion-text-center ion-justify-content-center">CURRENT</ion-row>
-        <ion-row class="currentResult ion-text-center ion-justify-content-center">NOMBRE</ion-row>
+        <ion-row class="currentResult ion-text-center ion-justify-content-center">
+          <h3 id="currentScore2">0</h3>
+        </ion-row>
       </ion-col>
 
     </ion-row>
